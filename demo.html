@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models™ Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="demo-container">
+        <h1 class="demo-title">Models™ Demo</h1>
+        <p class="demo-subtitle">Clarity When You Need It, Privacy When You Want It.</p>
+        
+        <div class="demo-content">
+            <!-- Left Column: Toggles -->
+            <div class="toggle-column">
+                <div class="toggle-container">
+                    <label for="day-night-toggle" class="toggle-label">
+                        <input type="checkbox" id="day-night-toggle" class="toggle-switch">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <p class="toggle-description">Day / Night</p>
+                </div>
+    
+                <div class="toggle-container">
+                    <label for="film-toggle" class="toggle-label">
+                        <input type="checkbox" id="film-toggle" class="toggle-switch">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <p class="toggle-description">Film On / Off</p>
+                </div>
+            </div>
+    
+            <!-- Right Column: Videos -->
+            <div class="video-column">
+                <div class="video-state" id="film-day">
+                    <video class="video-placeholder" autoplay muted loop>
+                        <source src="SHOT2_dark_day.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">Film ON - Day</p>
+                </div>
+                <div class="video-state" id="film-night">
+                    <video class="video-placeholder" autoplay muted loop>
+                        <source src="SHOT2_dark_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">Film ON - Night</p>
+                </div>
+                <div class="video-state" id="no-film-day">
+                    <video class="video-placeholder" autoplay muted loop>
+                        <source src="SHOT2_clear_day.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">Film OFF - Day</p>
+                </div>
+                <div class="video-state" id="no-film-night">
+                    <video class="video-placeholder" autoplay muted loop>
+                        <source src="SHOT2_clear_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="video-caption">Film OFF - Night</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
